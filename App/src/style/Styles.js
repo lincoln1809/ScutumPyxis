@@ -10,7 +10,7 @@ export default StyleSheet.create({
 	buttonContent: {
 		borderRadius: 5,
 		borderWidth: 2,
-		borderColor: '#008E51',
+		borderColor: '#005F80',
 		width: 200,
 		height: 45,
 		alignItems: 'center',
@@ -21,7 +21,7 @@ export default StyleSheet.create({
 		alignItems: 'center',
 	},
 	buttonText: {
-		fontSize: 14,
+		fontSize: 17,
 		fontWeight: 'bold',
 		color: '#005F80',
 		textTransform: 'uppercase',
@@ -38,7 +38,7 @@ export default StyleSheet.create({
 		justifyContent: 'space-around'
 	},
 	helpButtonText: {
-		fontSize: 14,
+		fontSize: 16,
 		color: '#005F80',
 	},
 
@@ -50,7 +50,8 @@ export default StyleSheet.create({
 	enterButtonContent: {
 		borderRadius: 5,
 		borderWidth: 2,
-		borderColor: '#008E51',
+		borderColor: '#7DCD52',
+		backgroundColor: '#7DCD52',
 		width: 160,
 		height: 45,
 		alignItems: 'center',
@@ -59,8 +60,8 @@ export default StyleSheet.create({
 	enterButtonText: {
 		fontWeight: 'bold',
 		textTransform: 'uppercase',
-		fontSize: 14,
-		color: '#008E51',
+		fontSize: 17,
+		color: '#FEFEFE',
 	},
 
 	//Cancel Button EA3D2F
@@ -72,6 +73,7 @@ export default StyleSheet.create({
 		borderRadius: 5,
 		borderWidth: 2,
 		borderColor: '#EA3D2F',
+		backgroundColor: '#EA3D2F',
 		width: 160,
 		height: 45,
 		alignItems: 'center',
@@ -80,8 +82,8 @@ export default StyleSheet.create({
 	cancelButtonText: {
 		textTransform: 'uppercase',
 		fontWeight: 'bold',
-		fontSize: 14,
-		color: '#EA3D2F',
+		fontSize: 17,
+		color: '#FEFEFE',
 	},
 
 	//Image

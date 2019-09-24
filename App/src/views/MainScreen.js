@@ -17,12 +17,14 @@ export default class MainScreen extends Component {
 					<Button
 						style={ Styles.buttonContent }
 						textStyle={ Styles.buttonText }
+						underlayColor={ '#005F80' }
 						title="Crie sua conta"
 						onPress={() => navigate('Logon')}
 					/>
 					<Button
 						style={ Styles.buttonContent }
 						textStyle={ Styles.buttonText }
+						underlayColor={ '#005F80' }
 						title="Entre"
 						onPress={() => navigate('Login')}
 					/>

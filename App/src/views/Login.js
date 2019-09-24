@@ -8,12 +8,12 @@ const theme = {
     roundness: 5,
     colors: {
       primary: '#005F80',
-      accent: '#f1c40f',
+      accent: '#008E51',
     }
   };
 export default class Login extends Component {
     render() {
-        const { navigate } = this.props.navigation;
+        const { navigate, goBack } = this.props.navigation;
         return (
             <View style={Styles.container}>
 				<View style={Styles.top}>
@@ -25,38 +25,37 @@ export default class Login extends Component {
                     <View style={Styles.inputField}>
                         <TextInput
                             theme={theme}
-                            style={Styles.color}
                             label='Email/CPF'
-                            mode='outlined'
-                        />
+                            mode='outlined'/>
                     </View>
                     <View style={ Styles.inputField }>
                         <TextInput
                             theme={theme}
                             label='Senha'
-                            mode='outlined'
-                        />
+                            mode='outlined'/>
                     </View>
                     <View style={ Styles.bottomReverse }>
                         <Button
                         style={ Styles.cancelButtonContent }
-						textStyle={ Styles.cancelButtonText }
+                        textStyle={ Styles.cancelButtonText }
+                        underlayColor={ '#EA3D2F' }
 						title="Cancelar"
-						onPress={() => navigate('Login')}/>
+						onPress={() => goBack()}/>
                         <Button
                         style={ Styles.enterButtonContent }
-						textStyle={ Styles.enterButtonText }
+                        textStyle={ Styles.enterButtonText }
+                        underlayColor={ '#7DCD52' }
 						title="Entrar"
-						onPress={() => navigate('Login')}/>
+						onPress={() => navigate('Logon')}/>
                     </View>
                     <View style = {Styles.bottom}>
-					<Button
-						style={ Styles.helpButtonContent }
-						textStyle={ Styles.helpButtonText }
-						title="Esqueci minha senha"
-						onPress={() => navigate('Logon')}
-					/>
-				</View>
+                        <Button
+                            style={ Styles.helpButtonContent }
+                            textStyle={ Styles.helpButtonText }
+                            title="Esqueci minha senha"
+                            onPress={() => navigate('Logon')}
+                        />
+				    </View>
                 </View>
 			</View>
         )
