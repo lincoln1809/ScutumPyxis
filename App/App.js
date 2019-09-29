@@ -7,6 +7,7 @@ import { createStackNavigator} from 'react-navigation-stack';
 import MainScreen from './src/views/MainScreen';
 import Logon from './src/views/Logon'
 import Login from './src/views/Login'
+
 const App = createStackNavigator({ 
     Home: {
       screen: MainScreen,
@@ -22,9 +23,16 @@ const App = createStackNavigator({
     },
     Logon: {
       screen: Logon,
-        navigationOptions: {
-          header: null,
-      },
+      navigationOptions: {
+        title: 'Crie sua conta',
+        headerStyle: {
+          backgroundColor: '#005F80',
+        },
+        headerTintColor: '#fefefe',
+        headerTitleStyle: {
+          fontWeight: 'bold',
+        },
+    },
     },
   },
   {
