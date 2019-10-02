@@ -16,7 +16,7 @@ const App = createStackNavigator({
       },
     },
     Login: {
-      screen: Login,
+      screen:  Login,
         navigationOptions: {
           header: null,
       },
