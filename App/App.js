@@ -1,14 +1,14 @@
-import React, { Component } from 'react';
-import { createAppContainer } from 'react-navigation';
-import { createStackNavigator} from 'react-navigation-stack';
+import { createAppContainer } from 'react-navigation'
+import { createStackNavigator} from 'react-navigation-stack'
 
 //screens import
 
-import MainScreen from './src/views/MainScreen';
+import MainScreen from './src/views/MainScreen'
 import Logon from './src/views/Logon'
 import Login from './src/views/Login'
+import UserScreen from './src/views/UserScreen'
 
-const App = createStackNavigator({ 
+const App = createStackNavigator({
     Home: {
       screen: MainScreen,
       navigationOptions: {
@@ -33,6 +33,13 @@ const App = createStackNavigator({
           fontWeight: 'bold',
         },
     },
+    },
+    UserScreen: {
+      screen: UserScreen,
+      navigationOptions: {
+        header: null,
+        gesturesEnabled: false,
+      },
     },
   },
   {
