@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import { View, Image, Text } from 'react-native'
+import { View } from 'react-native'
 import Styles from '../style/Styles'
-import { Button } from "../components/button"
+import { Button } from '../components/button'
 import { TextInput } from 'react-native-paper'
 
 const theme = {
@@ -15,9 +15,9 @@ const theme = {
 export default class Logon extends Component {
 
   handleSubmit = () => {
-    const personalDataLogon = this.state;
-    console.log('value: ', personalDataLogon);
-    this.props.navigation.navigate('Login');
+    const personalDataLogon = this.state
+    console.log( 'value: ', personalDataLogon)
+    this.props.navigation.navigate( 'Login' )
   }
 
   state = {
@@ -26,74 +26,66 @@ export default class Logon extends Component {
     cpf: '',
     password: '',
     confirmPassword: '',
-  };
+  }
 
   render() {
     const { navigate, goBack } = this.props.navigation
     return (
-      <View style={Styles.container}>
-        <View style={Styles.input}>
-          <View style={Styles.inputField}>
+      <View style={ Styles.container }>
+        <View style={ Styles.input }>
+          <View style={ Styles.inputFieldFirst }>
             <TextInput
               label='Nome Completo'
-              value={this.state.name}
-              onChangeText={name => this.setState({ name })}
-              theme={theme}
+              value={ this.state.name }
+              onChangeText={ name => this.setState( { name } ) }
+              theme={ theme }
               mode='outlined'/>
           </View>
-          <View style={Styles.inputField}>
+          <View style={ Styles.inputField }>
             <TextInput
-              value={this.state.email}
-              onChangeText={email => this.setState({ email })}
-              theme={theme}
+              value={ this.state.email }
+              onChangeText={ email => this.setState( { email } ) }
+              theme={ theme }
               label='E-mail'
               mode='outlined' />
           </View>
-          <View style={Styles.inputField}>
+          <View style={ Styles.inputField }>
             <TextInput
-              value={this.state.cpf}
-              onChangeText={cpf => this.setState({ cpf })}
-              theme={theme}
+              value={ this.state.cpf }
+              onChangeText={ cpf => this.setState( { cpf } ) }
+              theme={ theme }
               label='CPF'
               mode='outlined' />
           </View>
-          <View style={Styles.inputField}>
+          <View style={ Styles.inputField }>
             <TextInput
-              value={this.state.password}
-              onChangeText={password => this.setState({ password })}
-              theme={theme}
+              value={ this.state.password }
+              onChangeText={ password => this.setState( { password } ) }
+              theme={ theme }
               label='Senha'
               mode='outlined' />
           </View>
-          <View style={Styles.inputField}>
+          <View style={ Styles.inputField }>
             <TextInput
-              value={this.state.confirmPassword}
-              onChangeText={confirmPassword => this.setState({ confirmPassword })}
-              theme={theme}
+              value={ this.state.confirmPassword }
+              onChangeText={ confirmPassword => this.setState( { confirmPassword } ) }
+              theme={ theme}
               label='Confirmar Senha'
               mode='outlined' />
           </View>
-          <View style={Styles.bottomReverse}>
+          <View style={ Styles.bottomReverse }>
             <Button
-              style={Styles.cancelButtonContent}
-              textStyle={Styles.cancelButtonText}
-              underlayColor={'#EA3D2F'}
+              style={ Styles.cancelButtonContent }
+              textStyle={ Styles.cancelButtonText }
+              underlayColor={ '#EA3D2F' }
               title="Cancelar"
-              onPress={() => goBack()} />
+              onPress={ () => goBack() } />
             <Button
-              style={Styles.enterButtonContent}
-              textStyle={Styles.enterButtonText}
-              underlayColor={'#7DCD52'}
+              style={ Styles.enterButtonContent }
+              textStyle={ Styles.enterButtonText }
+              underlayColor={ '#7DCD52' }
               title="Entrar"
-              onPress={this.handleSubmit} />
-          </View>
-          <View style={Styles.bottom}>
-            <Button
-              style={Styles.helpButtonContent}
-              textStyle={Styles.helpButtonText}
-              title="Esqueci minha senha"
-              onPress={() => navigate('Logon')}
-            />
+              onPress={ this.handleSubmit } />
           </View>
         </View>
       </View>

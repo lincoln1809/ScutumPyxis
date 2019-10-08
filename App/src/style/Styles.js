@@ -1,4 +1,4 @@
-import { StyleSheet } from "react-native"
+import { StyleSheet } from 'react-native'
 
 export default StyleSheet.create({
 	container: {
@@ -10,7 +10,7 @@ export default StyleSheet.create({
 	buttonContent: {
 		borderRadius: 5,
 		borderWidth: 2,
-		borderColor: '#005F80',
+		borderColor: '#008E51',
 		width: 200,
 		height: 45,
 		alignItems: 'center',
@@ -25,6 +25,25 @@ export default StyleSheet.create({
 		fontWeight: 'bold',
 		color: '#005F80',
 		textTransform: 'uppercase',
+	},
+	bigButtonContent: {
+		borderRadius: 5,
+		borderWidth: 2,
+		borderColor: '#008E51',
+		width: 250,
+		height: 70,
+		alignItems: 'center',
+		justifyContent: 'space-around'
+	},
+	bigButtonContainer: {
+		flex: 2,
+		flexDirection: 'column',
+		alignItems: 'center',
+		justifyContent: 'flex-start'
+	},
+	bigButton: {
+		alignItems: 'center',
+		padding: 20,
 	},
 
 	//Help Button
@@ -155,5 +174,19 @@ export default StyleSheet.create({
 	inputField: {
 		color: '#005F80',
 		paddingBottom: 50,
-	}
+	},
+	inputFieldFirst: {
+		color: '#005F80',
+		paddingBottom: 50,
+		paddingTop: 25,
+	},
+
+	//Avatar
+
+	avatarContainer: {
+		alignItems: 'center',
+		justifyContent: 'space-around',
+		paddingBottom: 60,
+		paddingTop: 60,
+	},
 })
