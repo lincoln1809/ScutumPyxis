@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { View, Image } from 'react-native'
+import { View, Image, Text } from 'react-native'
 import Styles from '../style/Styles'
 import { Button } from '../components/button'
 
@@ -12,15 +12,16 @@ export default class MainScreen extends Component {
 					<Image style={ Styles.imageSize }
 						source={ require( '../img/splogo.png' ) }
 						resizeMode="contain" />
+					<Text style={{ fontSize: 30, fontWeight: 'bold', color: '#005F80', textTransform: 'uppercase', }}>Scutum Pyxies</Text>
 				</View>
 				<View style={ Styles.center }>
-					<Button
+					{/* <Button
 						style={ Styles.buttonContent }
 						textStyle={ Styles.buttonText }
 						underlayColor={ '#005F80' }
 						title="Crie sua conta"
 						onPress={ () => navigate('Logon') }
-					/>
+					/> */}
 					<Button
 						style={ Styles.buttonContent }
 						textStyle={ Styles.buttonText }
@@ -30,12 +31,12 @@ export default class MainScreen extends Component {
 					/>
 				</View>
 				<View style={ Styles.bottom }>
-					<Button
+					{/* <Button
 						style={ Styles.helpButtonContent }
 						textStyle={ Styles.helpButtonText }
 						title="Precisa de ajuda? Toque aqui!"
 						onPress={ () => navigate('Logon') }
-					/>
+					/> */}
 				</View>
 			</View>
 		)

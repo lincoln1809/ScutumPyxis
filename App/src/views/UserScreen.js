@@ -6,7 +6,6 @@ import { Avatar } from 'react-native-paper'
 
 export default class UserScreen extends Component {
   render() {
-    const { name, email, senha } = this.props.navigation.state.params.personalDataLogin
     const { navigate } = this.props.navigation
     return(
       <View style={ Styles.container }>
@@ -15,7 +14,7 @@ export default class UserScreen extends Component {
             <Avatar.Text size={80} label="FT" />
           </View>
           <View>
-            <Text style={ Styles.buttonText }> { name } </Text>
+            <Text style={ Styles.buttonText }> { this.props.navigation.state.params.name } </Text>
           </View>
         </View>
         <View style={ Styles.bigButtonContainer }>
