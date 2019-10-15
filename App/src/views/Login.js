@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { View, Image, Text } from 'react-native'
+import { View, Image, Text, Alert } from 'react-native'
 import Styles from '../style/Styles'
 import { Button } from  '../components/button'
 import { TextInput } from 'react-native-paper'
@@ -29,7 +29,7 @@ export default class Login extends Component {
 
       this.props.navigation.navigate('UserScreen', { name })
     } catch (err) {
-      alert.alert('Erro', 'Falha no Login!')
+      Alert.alert('Erro', 'Falha no Login!')
     }
   }
 
@@ -59,7 +59,7 @@ export default class Login extends Component {
           </View> */}
           <View style={ Styles.inputField }>
             <TextInput
-              label='Email ou CPF'
+              label='Email'
               value={ this.state.email }
               onChangeText={ email => this.setState( { email } ) }
               theme={theme}

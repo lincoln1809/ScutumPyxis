@@ -11,7 +11,7 @@ export default class UserScreen extends Component {
       <View style={ Styles.container }>
         <View style={ Styles.avatarContainer }>
           <View style={{ padding: 10 }}>
-            <Avatar.Text size={80} label="FT" />
+            <Avatar.Image size={80} source={require('../img/splogo.png')} />
           </View>
           <View>
             <Text style={ Styles.buttonText }> { this.props.navigation.state.params.name } </Text>

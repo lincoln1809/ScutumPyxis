@@ -8,4 +8,4 @@ function showError(err) {
     Alert.alert('Ops! Ocorreu um problema!', `Mensagem: ${err}`)
 }
 
-export { server,showError }
+export { server, showError }
