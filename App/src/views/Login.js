@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { View, Image, Text, Alert } from 'react-native'
+import { View, Image, Text, Alert, AsyncStorage } from 'react-native'
 import Styles from '../style/Styles'
 import { Button } from  '../components/button'
 import { TextInput } from 'react-native-paper'
@@ -25,9 +25,14 @@ export default class Login extends Component {
 
       axios.defaults.headers.common['Autorization'] = `bearer ${res.data.token}`
 
+      let data = res.data
+      let userId = res.data.id
       let name = res.data.name
+      let email = res.data.email
+      let score = res.data.score
+      let office = res.data.office
 
-      this.props.navigation.navigate('UserScreen', { name })
+      this.props.navigation.navigate('UserScreen', { name, score })
     } catch (err) {
       Alert.alert('Erro', 'Falha no Login!')
     }
