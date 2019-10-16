@@ -1,4 +1,6 @@
-import { StyleSheet } from 'react-native'
+import { StyleSheet, Dimensions } from 'react-native'
+
+
 
 export default StyleSheet.create({
 	container: {
@@ -189,4 +191,169 @@ export default StyleSheet.create({
 		paddingBottom: 60,
 		paddingTop: 60,
 	},
+
+//  //Routes Container
+
+//  routesContainer:{
+//    flex: 1,
+//    flexDirection: 'column',
+//  },
+
+//  giantButtonContent: {
+//    borderRadius: 5,
+//    borderWidth: 1,
+//    borderColor: '#008E51',
+//    width: '90%',
+//    height: 125,
+//    alignItems: 'center',
+//    justifyContent: 'space-around',
+//    flexDirection: 'row'
+
+//  },
+//  giantButtonContainer: {
+//    flex: 2,
+//    flexDirection: 'row',
+//    alignItems: 'center',
+//    justifyContent: 'flex-start'
+//  },
+//  // giantButton: {
+//  //  borderRadius: 5,
+//  //  borderWidth: 2,
+//  //  borderColor: '#008E51',
+//  //  width: 325,
+//  //  height: 125,
+//  //  alignItems: 'center',
+//  //  marginBottom: 17,
+//  // },
+
+//  //ImageHolder
+//  imageHolder: {
+//    borderRadius: 5,
+//    borderWidth: 2,
+//    borderColor: '#005F80',
+//         flex: 1,
+//    flexDirection: 'row',
+//         marginHorizontal: 5,
+//         marginVertical: 10
+//  },
+
+//  //Sensor image
+//  sensorImage: {
+//    height: 95,
+//    width:95,
+//    alignItems: 'center'
+//  },
+
+//  // //text Space
+
+//  // columnSet: {
+//  //  height: 100,
+//  //  width: 205,
+//  //  flexDirection: 'column'
+//  // },
+
+//  // Title
+
+//  title: {
+//    alignItems: "center",
+//    fontSize: 18,
+//    flex: 1,
+//    fontWeight: 'bold',
+//    color: '#008E51'
+
+//  },
+
+//  // Description
+
+//  description: {
+//    alignItems: "center",
+//    fontSize: 11,
+//    flex: 3,
+//    marginRight: 5
+//    },
+
+	routeButtonContent: {
+		borderRadius: 5,
+		borderWidth: 2,
+		borderColor: '#008E51',
+		width: Dimensions.get('screen').width - 20,
+		height: 125,
+		alignItems: 'center',
+	},
+	routesCenter: {
+		flex: 1,
+		paddingTop: 10,
+		flexDirection: 'column',
+		alignItems: 'center',
+	},
+	routeView: {
+		flex: 1,
+		padding: 10,
+		flexDirection: 'row',
+		alignItems: 'center',
+	},
+	routeImage: {
+		borderRadius: 5,
+		borderWidth: 2,
+		width: 110,
+		height: 110,
+		borderColor: '#008E51',
+		alignItems: "center",
+		justifyContent: 'center',
+
+	},
+	routeImageSizeBlue: {
+		width: 50,
+		height: 50,
+		borderRadius: 25,
+		backgroundColor: 'blue',
+	},
+	routeImageSizeGreen: {
+		width: 50,
+		height: 50,
+		borderRadius: 25,
+		backgroundColor: 'green',
+	},
+	routeImageSizeYellow: {
+		width: 50,
+		height: 50,
+		borderRadius: 25,
+		backgroundColor: 'yellow',
+	},
+	routeImageSizeRed: {
+		width: 50,
+		height: 50,
+		borderRadius: 25,
+		backgroundColor: 'red',
+	},
+	routeImageSizeOrange: {
+		width: 50,
+		height: 50,
+		borderRadius: 25,
+		backgroundColor: 'orange',
+	},
+	routeImageSizeLilac: {
+		width: 50,
+		height: 50,
+		borderRadius: 25,
+		backgroundColor: 'purple',
+	},
+	routeDesc: {
+		flex: 4,
+		paddingLeft: 10,
+		flexDirection: 'column'
+	},
+	title: {
+		alignItems: "center",
+		fontSize: 18,
+		flex: 1,
+		fontWeight: 'bold',
+		color: '#008E51'
+	},
+	desc: {
+		flex: 3,
+		alignItems: "center",
+		fontSize: 11,
+		marginRight: 5
+	}
 })
